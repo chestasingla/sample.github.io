@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+    <script src="https://kit.fontawesome.com/e428df0bd4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/raushan.png" class="logo" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"> -->
+                <ul id="sidemenu" data-aos="fade-down" data-aos-duration="2000">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#review">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" data-aos="zoom-in-up" data-aos-duration="2000">
+                <p>Hi,  <span class="intro"></span></p>
+                <h1>I'm your <span class="auto-type"></span></h1>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------about----------------------->
+    <div id="about">
+    <div class="container" data-aos="fade-in" data-aos-duration="2000">
+        <div class="row">
+            <div class="about-col-1" data-aos="flip-left" data-aos-duration="2000">
+                <img src="images/picture.jpeg" alt="404" class="src">
+            </div>
+            <div class="about-col-2" data-aos="fade-down-left" data-aos-duration="2000">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hii i am Prerna,<BR>I am an engaging consultant psychologist specialising in cognitive-based therapies. 
+                    My areas of particular interest include personality disorder, PTSD, challenging behaviour and medically unexplained symptoms. </p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Specialization</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Goals</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                        </ul>
+                     </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!--------------------------services -------------->
+    <div id="faq">
+        <div class="container" data-aos="fade-in" data-aos-duration="2000">
+            <h1 class="sub-title" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">Conditions I can help with</h1>
+            <div class="services-list">
+                <div data-aos="fade-right" data-aos-duration="2000">
+                    <i class="fa-regular fa-cloud"></i>
+                    <h2>Anxiety</h2>
+                    <p>Together we work in a thorough and interactive way to achieve a shift
+                         in thinking so that things that used to make you anxious no longer do.</p>
+                    <a href="https://www.healthline.com/health/anxiety">Learn more</a>
+                </div>
+                <div data-aos="fade-down" data-aos-duration="2000">
+                    <i class="fa-regular fa-cloud"></i>
+                    <h2>Confidence</h2>
+                    <p>The good news is that confidence is an inside job. Just as we can sabotage ourselves the opposite is true too: we 
+                        can cultivate a much more positive way of helping ourselves to thrive.
+                    </p>
+                    <a href="https://www.verywellmind.com/signs-of-low-self-esteem-5185978">Learn more</a>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="2000">
+                    <i class="fa-regular fa-cloud"></i>
+                    <h2>Fear & Phobia</h2>
+                    <p>Overcoming a fear which has bothered you in an extreme way for a long time can be such a confidence
+                        boost and can lead to positive change in other areas of your life.
+                    </p>
+                    <a href="https://www.mind.org.uk/information-support/types-of-mental-health-problems/phobias/symptoms-of-phobias/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------portfolio--------------------------------->
+    <div id="review">
+        <div class="container" data-aos="fade-in" data-aos-duration="2000">
+            <h1 class="sub-title" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">Review</h1>
+            <div class="work-list">
+                <div class="work" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <img src="images/happy4.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Chesta</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quasi adipisci itaque hic reiciendis facere asperiores aut eos rerum vel aliquam sequi ipsam excepturi, tempora facilis id maxime! Aspernatur tempore impedit, quia maxime accusantium laboriosam odit qui voluptatibus earum illo cupiditate dicta, natus illum, tenetur fugit eius praesentium rem quibusdam.</p>
+                    </div>
+                </div>
+                <div class="work" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <img src="images/happy5.jpeg" alt="404">
+                    <div class="layer">
+                    <h3>Jyoti</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt amet distinctio aspernatur voluptatem expedita praesentium nostrum dolorem
+                         consectetur. Facilis libero unde atque sint nisi odio, neque illo voluptatem minus in odit adipisci dolorum nulla at esse quidem temporibus labore voluptates autem necessitatibus ut quisquam? Vel cumque eos cum repellendus asperiores?</p>
+                    </div>
+                </div>
+                <div class="work" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <img src="images/happy6.jpeg" alt="404">
+                    <div class="layer">
+                    <h3>chetna</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit modi voluptas, voluptatibus veniam libero neque molestiae eligendi autem iusto eveniet, consequuntur ea totam nostrum laboriosam harum! Non, officia et ipsum aut beatae tenetur consectetur
+                         architecto nisi ea minima dolores nam aperiam ad iusto. Quis velit, quasi quae quidem magni doloribus..</p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--------------------------------------contact------------------------>
+    <div id="contact">
+        <div class="container" data-aos="fade-in" data-aos-duration="2000">
+            <div class="row">
+                <div class="contact-left" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" data-aos-duration="1500">
+                    <h1 class="sub-title">Contact Me </h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>abc@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>**********</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100010736672591&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/raushan00126?t=fIkdbV-HlxHyLp9LJQBb3w&s=09"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://instagram.com/raushan_himself?igshid=OTJhZDVkZWE="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/raushan-kumar-83ba611bb"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <!-- <a href="images/mycv.pdf" download class="btn btn2">Download CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Click to Submit</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Chesta </p>
+        </div>
+    </div>
+    <script>
+        
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx5_L7B-28e9etO4vLfS0GYyvSlmsW2B_u9nW_B6B1_M-5Nc8S5e-brAEuBI1Sa3Blbbw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+        <script>
+            var typed=new Typed(".auto-type",{
+                strings:["Guide","Mentor","Therapist"],
+                typeSpeed:150,
+                backSpeed:100,
+                loop:true
+            })
+            var typed=new Typed(".intro",{
+                strings:["I'm Prerna"],
+                typeSpeed:200,
+                backSpeed:200,
+                loop:true
+            })
+        </script>
+    
+</body>
+</html>
